@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEX BOX - PROBLEM</title>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+<script src="https://www.unpkg.com/react@18.2.0/umd/react.development.js"></script>
+<script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+<script>
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+
+
+    const styles = {
+        parent: {
+            backgroundColor: "pink",
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: "center",
+            padding: '20px',
+            gap: '20px'
+        },
+        box: {
+            width: '50px',
+            height: "50px",
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: "center",
+            border: "3px solid black",
+            color : 'white'
+        }
+    }
+
+    const element = React.createElement("div", {
+        style: styles.parent
+    },
+        React.createElement("div", {
+            style: { ...styles.box, backgroundColor: 'red' }
+        }, "1"),
+        React.createElement("div", {
+            style: { ...styles.box, backgroundColor: 'yellow' }
+        }, "2"),
+        React.createElement("div", {
+            style: { ...styles.box, backgroundColor: 'green' }
+        }, "3"),
+        React.createElement("div", {
+            style: { ...styles.box, backgroundColor: 'blue' }
+        }, "4"),
+
+    )
+
+
+    root.render(element)
+
+</script>
+
+</html>
