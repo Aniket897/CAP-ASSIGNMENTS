@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+button {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+button:active {
+    background-color: rgb(24, 23, 23);
+}
+
+
+.container {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-top: 50px;
+    padding: 0px 30px;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.error {
+    color: red;
+}
