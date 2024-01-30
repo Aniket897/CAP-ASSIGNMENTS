@@ -1,0 +1,45 @@
+form {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 20px;
+}
+
+input {
+  padding: 10px;
+}
+
+select {
+  padding: 10px;
+}
+
+.task {
+  padding: 10px;
+  border: 1px solid;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.task button {
+  margin: 0px 10px;
+}
+
+.completed {
+  background: rgb(10, 169, 10);
+  width: fit-content;
+  padding: 3px 5px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.pending {
+  background: rgb(254, 1, 1);
+  width: fit-content;
+  padding: 3px 5px;
+  font-size: 12px;
+  border-radius: 10px;
+}
